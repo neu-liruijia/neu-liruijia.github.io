@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue代码规范 | 前端知识</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="前端体系知识建设，包括vue react webpack gulp typescript npm 代理 微前端 koa node等等">
+    
+    <link rel="preload" href="/assets/css/0.styles.8c06f092.css" as="style"><link rel="preload" href="/assets/js/app.966a1997.js" as="script"><link rel="preload" href="/assets/js/2.03793925.js" as="script"><link rel="preload" href="/assets/js/13.0b2f422f.js" as="script"><link rel="prefetch" href="/assets/js/10.7fb2bed2.js"><link rel="prefetch" href="/assets/js/11.62530b40.js"><link rel="prefetch" href="/assets/js/12.2037aa22.js"><link rel="prefetch" href="/assets/js/3.de48e4f7.js"><link rel="prefetch" href="/assets/js/4.6ccb6fa7.js"><link rel="prefetch" href="/assets/js/5.88ac4181.js"><link rel="prefetch" href="/assets/js/6.a025ed4d.js"><link rel="prefetch" href="/assets/js/7.78c39f5b.js"><link rel="prefetch" href="/assets/js/8.559f8ad1.js"><link rel="prefetch" href="/assets/js/9.cfe39c3f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8c06f092.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端知识</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/neu-liruijia/neu-liruijia.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/neu-liruijia/neu-liruijia.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/npm.html" class="sidebar-link">npm梳理</a></li><li><a href="/algorithm.html" class="sidebar-link">算法</a></li><li><a href="/module.html" class="sidebar-link">模块化</a></li><li><a href="/vue.html" aria-current="page" class="active sidebar-link">Vue代码规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue.html#风格规范" class="sidebar-link">风格规范</a></li></ul></li><li><a href="/chalres.html" class="sidebar-link">chalres代理</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue代码规范"><a href="#vue代码规范" class="header-anchor">#</a> Vue代码规范</h1> <p></p><div class="table-of-contents"><ul><li><a href="#风格规范">风格规范</a></li></ul></div><p></p> <h2 id="风格规范"><a href="#风格规范" class="header-anchor">#</a> 风格规范</h2> <div class="language- extra-class"><pre class="language-text"><code>1. 组件名称不能是一个单词，例如： Todo, 最好是 TodoItem
+2. 非根组件的data是一个函数 除了 new Vue 外的任何地方
+3. props定义要详细
+4. v-for 需要使用 key配合
+5. 组件样式需要增加作用域，防止干扰其他组件样式，scoped
+6. 单文件组件文件名称，最好大写：MyComponent.vue
+7. 基础组件的名称，最好采用特定前缀开头，例如Base
+8. 和父组件紧密耦合的子组件应该以父组件名作为前缀命名，TodoList.vue ==》 TodoListItem.vue ==&gt; TodoListItemButton.vue
+9. 组件名应该以高级别的 (通常是一般化描述的) 单词开头，以描述性的修饰词结尾: SearchButtonClear.vue
+10. JS/JSX 中的组件名应该始终是 PascalCase
+11. 在声明 prop 的时候，其命名应该始终使用 camelCase，而在模板和 JSX 中应该始终使用 kebab-case,例如：  &lt;WelcomeMessage greeting-text=&quot;hi&quot;/&gt;
+    props: {
+    greetingText: String
+    }
+12. 多个 attribute 的元素应该分多行撰写，每个 attribute 一行。
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/28/2021, 4:07:22 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/module.html" class="prev">
+        模块化
+      </a></span> <span class="next"><a href="/chalres.html">
+        chalres代理
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.966a1997.js" defer></script><script src="/assets/js/2.03793925.js" defer></script><script src="/assets/js/13.0b2f422f.js" defer></script>
+  </body>
+</html>
